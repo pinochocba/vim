@@ -16,6 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -30,3 +31,7 @@ let g:ycm_complete_in_strings = 1 " Completion in string
 
 " Lightline Settings
 set laststatus=2
+
+map <C-n> :NERDTreeToggle<CR>
+map <C-Right> :tabn<CR>
+map <C-Left> :tabp<CR>
